@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Imperial+Script&family=Lobster+Two:ital@0;1&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display=swap');
+
+.footer {
+    background-color: #ffd6e0;
+    text-align: center;
+    padding: 28px 20px;
+    border-top: 5px solid #ffb7c5;
+    margin-top: auto;
+}
+
+.footerTitle {
+    font-size: 2rem;
+    font-family: "Lobster Two";
+    font-style: italic;
+    font-weight: 400;
+    color: #d62828;
+    margin-bottom: 10px;
+}
+
+.footerText {
+    font-size: 1.2rem;
+    font-family: "Edu NSW ACT Hand Cursive";
+    font-style: italic;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.footerCopy {
+    font-size: 1rem;
+    font-family: "Edu NSW ACT Hand Cursive";
+    font-style: italic;
+    font-weight: 400;
+    color: #444;
+}
+
+@media (max-width: 769px) {
+    .footerTitle {
+        font-size: 1.7rem;
+    }
+
+    .footerText {
+        font-size: 1rem;
+    }
+
+    .footerCopy {
+        font-size: 0.9rem;
+    }
+}

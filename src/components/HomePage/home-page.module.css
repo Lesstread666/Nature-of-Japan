@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Imperial+Script&family=Lobster+Two:ital@0;1&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display=swap');
+
+.main {
+    padding: 60px 30px 80px;
+    text-align: center;
+}
+
+.title {
+    font-size: 3.2rem;
+    font-family: "Lobster Two";
+    font-style: italic;
+    font-weight: 400;
+    color: #d62828;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.subTitle {
+    font-size: 2.1rem;
+    font-family: "Edu NSW ACT Hand Cursive";
+    font-style: italic;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    margin: 24px;
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 520px;
+    padding: 28px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 3px solid #ffb7c5;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    margin-bottom: 24px;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.22);
+}
+
+.cardName {
+    font-size: 2.3rem;
+    font-family: "Lobster Two";
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    color: #d62828;
+    margin-bottom: 16px;
+}
+
+.cardImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #ffccd5;
+    margin-bottom: 20px;
+}
+
+.cardSubTitle {
+    font-size: 1.5rem;
+    font-family: "Edu NSW ACT Hand Cursive";
+    font-style: italic;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.backButton {
+    border: 3px solid #ffb7c5;
+    border-radius: 10px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-family: "Edu NSW ACT Hand Cursive";
+    font-style: italic;
+    font-weight: 400;
+    padding: 12px 20px;
+    transition: 0.2s;
+}
+
+.backButton:hover {
+    background-color: #ffb7c5;
+}
+
+.backButton:active {
+    background-color: #d62828;
+    color: white;
+}
+
+/* MOBILE */
+@media (max-width: 769px) {
+
+    .cardsContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subTitle {
+        font-size: 1.6rem;
+    }
+
+}

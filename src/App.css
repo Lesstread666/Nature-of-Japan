@@ -1,0 +1,26 @@
+.appLayout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    background-image: url("/images/mount-fuji-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.appLayout::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(6px);
+    background-color: rgba(255,255,255,0.5);
+    z-index: 0;
+}
+
+.appLayout > * {
+    position: relative;
+    z-index: 1;
+}
