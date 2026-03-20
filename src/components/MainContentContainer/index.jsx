@@ -12,7 +12,7 @@ const MainContent = ({ page, setPage }) => {
 
     if (!place) return null 
 
-    return <PlacePage place={place} />
+    return <PlacePage place={place} setPage={setPage} />
 
 
 }
